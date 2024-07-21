@@ -6,13 +6,12 @@ const router = express.Router();
 config();
 const myemail=process.env.email;
 const mypass=process.env.password;
-console.log(myemail, " and ", mypass);
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
-app.listen(5000, () => console.log("Server Running"));
+app.listen(3000, () => console.log("Server Running"));
 
 const contactEmail = nodemailer.createTransport({
     service: 'gmail',
@@ -36,7 +35,7 @@ const contactEmail = nodemailer.createTransport({
     const message = req.body.message; 
     const mail = {
       from: name,
-      to:myemail,
+      to:"smartsolutionsprintnpack@gmail.com",
       subject: "Contact Form Submission From Website",
       html: `<p>Name: ${name}</p>
              <p>Email: ${email}</p>
