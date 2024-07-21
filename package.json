@@ -1,0 +1,12 @@
+{
+  "name": "mailing",
+  "version": "1.0.0",
+  "description": "mailing service required packages",
+  "type":"module",
+  "main": "mailingService.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vaibhav Shokeen",
+  "license": "ISC"
+}
